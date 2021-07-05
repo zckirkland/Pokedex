@@ -1,4 +1,4 @@
-var pokemonList = [
+let pokemonList = [
     {
         name: 'Charizard',
         height: '1.7',
@@ -24,3 +24,14 @@ var pokemonList = [
         attack: '70',
     },
 ];
+
+for (let i = 0; i < pokemonList.length; i++) {
+    document.write(pokemonList[i].name + " (Height :" + pokemonList[i].height + ")");
+
+    if (pokemonList[i].height > 1.5) {
+        document.write(" - A big one!");
+    }
+
+    document.write("<br></br>");
+    
+}
